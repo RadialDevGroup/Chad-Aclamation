@@ -3,6 +3,7 @@
 1. Pick a story from [Sprintly](http://sprint.ly/product/29894/dashboard/?tags=Aclamation&statuses=backlog,current,complete&order=priority) and start it.
 
   > Example: #5 - As a Guest I want to book a tour from the list so that I can plan on taking the tour
+
 2. Create a local branch in your development environment to work on the story.
 
   > Example: 5-guest-book-tour
@@ -11,7 +12,9 @@
 
   `git commit -am "Added guest book feature"`
   > *I recommend using a visual tool to make commits, for example gitx or gitg ~Ben*
+
 6. Create a pull request using the template.
+
   See [PULL_REQUEST_TEMPLATE.MD](PULL_REQUEST_TEMPLATE.MD)
 
   > You may need to merge master back into your branch before it will merge cleanly:
@@ -37,7 +40,9 @@
   > Thanks,
   >
   > -- Ben
+
 8. Make any necessary changes.
+
 9. Request reviewer or project lead merge your code.
 
   > Github Comment:
