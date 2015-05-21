@@ -1,4 +1,9 @@
-# README
+# Aclamation
+
+a practice project to develop/hone/acclimate
+
+Its name appears to be a hybrid of the noun forms of Acclaim and Acclimate.  It
+seems nicely marketable.
 
 ## Currently Using
 
@@ -47,3 +52,8 @@ To make the current development site available from http://localhost:3000, use:
 ### Production
 
 Don't.  It is not production ready.  Not even remotely.
+
+
+## Development Process
+
+see PROCESS.md
