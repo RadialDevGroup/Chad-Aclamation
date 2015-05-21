@@ -28,7 +28,7 @@ None, at the moment.
 
 ## Database Management
 
-Only what Raails generates for free, at the moment.
+Only what Rails generates for free, at the moment.
 
 
 ## Services

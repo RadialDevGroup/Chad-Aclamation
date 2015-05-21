@@ -1,3 +1,3 @@
 # Chad-Aclamation
 
-See blog/README.md for details.
+See [blog/README.md](blog/README.md) for details.
