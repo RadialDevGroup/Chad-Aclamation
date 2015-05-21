@@ -12,26 +12,32 @@ seems nicely marketable.
 * SQLite 3.8.10.1 2015-05-09 12:14:55 05b4b1f2a937c06c90db70c09890038f6c98ec40
 
 
-## System Dependencies
+## Setup
 
-### FreeBSD
+### System Dependencies
+
+#### FreeBSD
 
 Getting SQLite working with Rails on FreeBSD is "special":
 
     gem install sqlite3 -- --with-sqlite3-dir=/usr/local --with-sqlite3-lib=/usr/local/lib
 
 
-## Configuration
+### Gems
+
+    $ bundle install
+
+### Configuration
 
 None, at the moment.
 
 
-## Database Management
+### Database Management
 
 Only what Rails generates for free, at the moment.
 
 
-## Services
+### Services
 
 None, at the moment.
 
@@ -47,7 +53,6 @@ Only what Rails generates for free, at the moment.
 
 To make the current development site available from http://localhost:3000, use:
 
-    $ bundle install
     $ bundle exec rails server
 
 ### Production
