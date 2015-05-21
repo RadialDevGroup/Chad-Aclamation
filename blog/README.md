@@ -47,6 +47,7 @@ Only what Rails generates for free, at the moment.
 
 To make the current development site available from http://localhost:3000, use:
 
+    $ bundle install
     $ bundle exec rails server
 
 ### Production
