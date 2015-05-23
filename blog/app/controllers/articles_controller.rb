@@ -1,5 +1,5 @@
 class ArticlesController < ApplicationController
-  before_action :find_article, only: [:show, :edit, :update]
+  before_action :find_article, only: [:show, :edit, :update, :destroy]
 
   def index
     @articles = Article.all
@@ -30,6 +30,11 @@ class ArticlesController < ApplicationController
     else
       render 'edit'
     end
+  end
+
+  def destroy
+    @article.destroy
+    redirect_to articles_path
   end
 
 
