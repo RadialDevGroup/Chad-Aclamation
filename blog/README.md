@@ -37,7 +37,7 @@ None, at the moment.
 The database seed adds an admin user with default password.  See `db/seeds.rb`
 for details.
 
-    $ bundle exec rake db:create db:migrate db:seed
+    $ bundle exec rake db:setup
 
 
 ### Services
