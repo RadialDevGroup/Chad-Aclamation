@@ -1,0 +1,33 @@
+<h2>Edit User: <%= @user.username %></h2>
+
+<%= form_for(@user, html: { method: :put }) do |f| %>
+  <p>
+    Role:
+    <% if policy(User).edit_role? %>
+      <%= f.select(:role, User.rolemap) %>
+      <% unless policy(User).identity? @user %><%= f.submit "Update" %><% end %>
+    <% else %>
+      <strong><%= @user.role %></strong>
+    <% end %>
+  </p>
+<% end %>
+
+<% if policy(User).update? and User.all.size > 1 %>
+  <h3>Edit Other Users</h3>
+  <table>
+    <tr>
+      <th>Username</th>
+      <th>Role</th>
+    </tr>
+    <% User.all.each do |u| %>
+      <tr>
+        <td><%= link_to u.username, edit_user_path(u.id) %></td>
+        <td><%= u.role %></td>
+      </tr>
+    <% end %>
+  </table>
+<% end %>
+
+<hr />
+
+<%= link_to "Back", :back %>
