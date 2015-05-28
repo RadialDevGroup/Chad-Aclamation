@@ -34,7 +34,10 @@ None, at the moment.
 
 ### Database Management
 
-Only what Rails generates for free, at the moment.
+The database seed adds an admin user with default password.  See `db/seeds.rb`
+for details.
+
+    $ bundle exec rake db:setup
 
 
 ### Services
